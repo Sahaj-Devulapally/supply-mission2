@@ -50,7 +50,7 @@ function setup() {
     box2.shapeColor=("red")
 	World.add(world, box2);
 
-	box3=Bodies.rectangle(385,650,200,20)
+	box3=Bodies.rectangle(390,630,200,20)
     box3.shapeColor=("red")
 	World.add(world, box3);
     
@@ -64,6 +64,10 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
+  fill("red")
+  rect(box1.position.x,box1.position.y,20,100)
+  rect(box2.position.x,box2.position.y,20,100)
+  rect(box3.position.x,box3.position.y,203,20)
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
   drawSprites();
